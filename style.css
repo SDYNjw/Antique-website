@@ -18,6 +18,16 @@ nav a {
   text-decoration: none;
 }
 
+h2 {
+  color: white;
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
+  text-decoration: none;
+}
+
 .product {
   display: inline-block;
   border: 1px solid #ccc;
