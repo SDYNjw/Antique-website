@@ -56,3 +56,77 @@ nav a {
   margin-top: 10px;
   font-size: 16px;
 }
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 14px;
+  color: black;
+}
+
+.product p {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Container: wide, centered, grid */
+.product-container {
+  max-width: 1200px;        /* lets it get wide */
+  margin: 0 auto;           /* center on the page */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Kill the old fixed width + inline-block */
+.product {
+  width: auto;              /* override old 200px */
+  display: block;           /* override inline-block */
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+/* Image sizing so cards look neat */
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  aspect-ratio: 4 / 3;      /* keeps consistent shape */
+  object-fit: cover;
+}
+
+/* Text colors */
+.product h3 { color: #000; font-size: 14px; margin: 10px 0 6px; }
+.product p  { color: #000; font-weight: 700; margin: 6px 0 10px; }
+
+body {
+  background-image: url("./images/background.jpg"); /* your picture path */
+  background-size: cover;       /* makes it fill the screen */
+  background-repeat: no-repeat; /* stops tiling */
+  background-attachment: fixed; /* stays still when scrolling */
+  background-position: center;  /* centers the image */
+}
