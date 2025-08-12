@@ -140,3 +140,10 @@ body {
   background-attachment: fixed; /* stays still when scrolling */
   background-position: center;  /* centers the image */
 }
+
+.wechat-img {
+  width: 500px;   /* make it smaller */
+  height: auto;   /* keep proportions */
+  display: block; /* optional: puts it on its own line */
+  margin: 10px auto; /* optional: center it */
+}
